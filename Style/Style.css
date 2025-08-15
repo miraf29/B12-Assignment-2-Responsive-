@@ -116,3 +116,30 @@ navbar style */
 .flower-img img {
   max-width: 100%;
 }
+
+/* Main flowers container style */
+.main {
+  margin-top: 150px;
+  margin-bottom: 190px;
+}
+.main-title-header {
+  width: 100%;
+  text-align: center;
+}
+.main-title {
+  font-size: 4rem;
+  font-weight: var(--fw-bold);
+  font-family: var(--font-family-heading);
+  text-align: center;
+}
+.main-title span {
+  color: var(--primary-color);
+}
+.main-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: var(--fw-normal);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  text-align: center;
+}
