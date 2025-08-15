@@ -53,3 +53,66 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* =============
+Header section */
+
+/* ==============
+navbar style */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+.menu li:first-child a {
+  color: black;
+  font-weight: var(--fw-bold);
+}
+.menu-card a:first-child {
+  color: black;
+  margin-top: 20px;
+}
+.navbar img {
+  height: 50px;
+}
+.menu {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+}
+.menu a {
+  color: var(--text-color);
+}
+
+/* Navbar style */
+/* Banner style */
+#banner {
+  display: flex;
+  align-items: center;
+  margin-top: 160px;
+}
+.banner-text {
+  max-width: 700px;
+}
+.banner-title {
+  margin-top: 50px;
+  font-size: 4rem;
+  font-weight: var(--fw-extrabold);
+  font-family: var(--font-family-heading);
+}
+.banner-title span {
+  color: var(--primary-color);
+}
+.banner-description {
+  margin-top: 13px;
+  padding-right: 10px;
+  font-weight: var(--fw-normal);
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+.flower-img img {
+  max-width: 100%;
+}
