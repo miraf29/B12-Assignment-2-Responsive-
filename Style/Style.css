@@ -1,0 +1,21 @@
+
+
+
+
+:root {
+  /* color */
+  --primary-color: #e95a08;
+  --text-color: #8987a1;
+  --secondary-text-color: #000000;
+
+  /* Font Family */
+  --font-family: "Inter", sans-serif;
+  --font-family-heading: "Noto Serif", serif;
+
+  /* Font weight */
+  --fontweight-normal: 400;
+  --fontweight-medium: 500;
+  --fontweight-semibold: 600;
+  --fontweight-bold: 700;
+  --fontweight-extrabold: 800;
+}
