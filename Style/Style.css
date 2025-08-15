@@ -463,13 +463,13 @@ a {
   
   /* Join Section */
   .join-section-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .input-field {
     padding: 0 15px;
   }
   .secondary-btn{
-    font-size: 14px;
+    font-size: 12px;
   }
   /* Footer  */
   .footer-content {
