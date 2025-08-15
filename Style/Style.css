@@ -19,3 +19,19 @@
   --fontweight-bold: 700;
   --fontweight-extrabold: 800;
 }
+
+body {
+  font-size: 22px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
