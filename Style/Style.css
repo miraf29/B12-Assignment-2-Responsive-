@@ -285,3 +285,70 @@ navbar style */
 .Shop-title {
   text-decoration: underline;
 }
+
+/* join section style*/
+.join-section {
+  max-width: 1440px;
+  height: 530px;
+  margin: 50px auto;
+  background: url(../assets/news-letter-bg.png) no-repeat center center;
+  display: flex;
+  align-items: center;
+}
+.join-text {
+  margin: 0 auto;
+}
+.join-section-title {
+  width: 100%;
+  padding: 0px 70px;
+  margin: 20px 0;
+  color: white;
+  font-size: 3rem;
+  font-family: var(--font-family-heading);
+  font-weight: var(--fw-bold);
+}
+.input-field {
+  display: flex;
+}
+.join-text input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  font-family: var(--font-family);
+  border-radius: 3px 0 0 3px;
+}
+.secondary-btn {
+  padding: 15px;
+  width: 30%;
+  border-radius: 0 8px 8px 0;
+}
+.secondary-btn:hover {
+  transform: none;
+}
+
+/* footer style */
+.footer-content,
+a {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  color: var(--text-color);
+  font-weight: var(--fw-normal);
+  font-family: var(--font-family);
+}
+.footer-logo {
+  max-width: 350px;
+}
+.footer-list a{
+  font-size: 1rem;
+}
+.social-icons {
+  display: flex;
+  gap: 24px;
+}
+.social-icons a:nth-child(2){
+  width: 36px;
+  height: 25px;
+  margin-top: 7px;
+}
