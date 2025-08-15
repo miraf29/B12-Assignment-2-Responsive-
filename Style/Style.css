@@ -1,6 +1,9 @@
 
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
   /* color */
@@ -13,15 +16,15 @@
   --font-family-heading: "Noto Serif", serif;
 
   /* Font weight */
-  --fontweight-normal: 400;
-  --fontweight-medium: 500;
-  --fontweight-semibold: 600;
-  --fontweight-bold: 700;
-  --fontweight-extrabold: 800;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
 }
 
 body {
-  font-size: 22px;
+  font-size: 23px;
 }
 
 a {
@@ -39,13 +42,13 @@ img {
 .btn {
   color: white;
   background-color: var(--primary-color);
-  padding: 26px;
+  padding: 25px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-weight: var(--fw-semibold);
+  font-weight: var(--font-weight-semibold);
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 9px;
   border: none;
 }
 
@@ -54,11 +57,9 @@ img {
   margin: 0 auto;
 }
 
-/* =============
-Header section */
+/* Header section */
 
-/* ==============
-navbar style */
+/* navbar style */
 
 .navbar {
   display: flex;
@@ -68,7 +69,7 @@ navbar style */
 }
 .menu li:first-child a {
   color: black;
-  font-weight: var(--fw-bold);
+  font-weight: var(--font-weight-bold);
 }
 .menu-card a:first-child {
   color: black;
@@ -87,12 +88,12 @@ navbar style */
   color: var(--text-color);
 }
 
-/* Navbar style */
+
 /* Banner style */
 #banner {
   display: flex;
   align-items: center;
-  margin-top: 160px;
+  margin-top: 155px;
 }
 .banner-text {
   max-width: 700px;
@@ -100,16 +101,16 @@ navbar style */
 .banner-title {
   margin-top: 50px;
   font-size: 4rem;
-  font-weight: var(--fw-extrabold);
+  font-weight: var(--font-weight-extrabold);
   font-family: var(--font-family-heading);
 }
 .banner-title span {
   color: var(--primary-color);
 }
 .banner-description {
-  margin-top: 13px;
+  margin-top: 15px;
   padding-right: 10px;
-  font-weight: var(--fw-normal);
+  font-weight: var(--font-weight-normal);
   font-family: var(--font-family);
   color: var(--text-color);
 }
@@ -156,9 +157,9 @@ navbar style */
   text-align: center;
   font-family: var(--font-family);
   line-height: 45px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 .flowers-card:hover {
   transform: scale(1.05);
@@ -166,25 +167,25 @@ navbar style */
 .flowers-card img {
   width: 100%;
   height: 300px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .card-title {
   margin-top: 30px;
-  font-size: 22px;
-  font-weight: var(--fw-medium);
+  font-size: 20px;
+  font-weight: var(--font-weight-medium);
 }
 .flowers-price {
-  font-size: 22px;
-  font-weight: var(--fw-bold);
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
   margin-bottom: 20px;
 }
 .btn {
   width: 100%;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in;
 }
 .btn:hover {
-   background-image: linear-gradient(to right, #e74c3c, #f39c12);
-  transform: scale(1.05);
+   background-image: linear-gradient(to right, #645e57, #83c60f);
+  transform: scale(1.10);
 }
 
 /* Plants Lover Style */
@@ -224,20 +225,20 @@ navbar style */
   border-radius: 2px;
 }
 .plants-lover-text {
-  margin-top: 34px;
+  margin-top: 35px;
   max-width: 700px;
 }
 .plant-lover-title {
   font-size: 4rem;
-  font-weight: var(--fw-bold);
+  font-weight: var(--font-weight-bold);
   font-family: var(--font-family-heading);
 }
 .plant-lover-list li {
   list-style: disc;
-  padding: 0 39px;
+  padding: 0 40px;
   margin-left: 50px;
   margin-top: 20px;
-  font-weight: var(--fw-normal);
+  font-weight: var(--font-weight-normal);
   color: var(--text-color);
 }
 /* latest image section */
@@ -249,12 +250,12 @@ navbar style */
   margin-top: 50px;
   display: grid;
   /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: 30% 67%;
+  grid-template-columns: 30% 70%;
   column-gap: 30px;
   row-gap: 30px;
   font-family: var(--font-family-heading);
-  font-weight: var(--fw-bold);
-  color: white;
+  font-weight: var(--font-weight-bold);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 .bloom-plant,
@@ -264,21 +265,21 @@ navbar style */
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  border-radius: 24px;
+  border-radius: 30px;
   padding-top: 70px;
 }
 .ana-plant {
   margin-top: 30px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../assets/deal-ana.png);
 }
 .zabo-plant {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(../assets/deal-zabo.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  border-radius: 24px;
+  border-radius: 30px;
   font-size: 40px;
   padding-top: 150px;
 }
@@ -305,7 +306,7 @@ navbar style */
   color: white;
   font-size: 3rem;
   font-family: var(--font-family-heading);
-  font-weight: var(--fw-bold);
+  font-weight: var(--font-weight-bold);
 }
 .input-field {
   display: flex;
@@ -315,12 +316,12 @@ navbar style */
   padding: 15px;
   border: none;
   font-family: var(--font-family);
-  border-radius: 3px 0 0 3px;
+  border-radius: 4px 0 0 4px;
 }
 .secondary-btn {
   padding: 15px;
   width: 30%;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 10px 10px 0;
 }
 .secondary-btn:hover {
   transform: none;
@@ -334,7 +335,7 @@ a {
   margin-top: 0px;
   margin-bottom: 40px;
   color: var(--text-color);
-  font-weight: var(--fw-normal);
+  font-weight: var(--font-weight-normal);
   font-family: var(--font-family);
 }
 .footer-logo {
@@ -345,10 +346,143 @@ a {
 }
 .social-icons {
   display: flex;
-  gap: 24px;
+  gap: 25px;
 }
 .social-icons a:nth-child(2){
-  width: 36px;
+  width: 40px;
   height: 25px;
   margin-top: 7px;
+}
+
+/*Media Query > responsive mobile Device */
+
+@media (max-width: 768px) {
+  .container {
+    margin: 10px auto;
+  }
+  .navbar {
+    margin: 0 10px;
+  }
+  .menu-list {
+    display: none;
+  }
+
+  /* Banner */
+  #banner {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+  .banner-title {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+  .banner-description {
+    font-size: 1.2rem;
+    padding:0 20px;
+  }
+  .flower-img {
+    max-width: 100%;
+  }
+  .flower-img-responsive{
+    width: ;
+    height: auto;
+  }
+  /* Flowers card */
+  .main {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .main-flowers-cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 17px;
+    margin: 50px auto;
+  }
+  .flowers-card img {
+  height: 200px;
+}
+  .main-title-header, .latest-deals-text {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .main-title {
+    font-size: 2.6rem;
+  }
+  .main-description {
+    font-size: 1.1rem;
+    padding:0 20px;
+  }
+  /* Plants Lover*/
+  .plants-lover {
+    flex-direction: column;
+    padding: 17px;
+    gap: 10px;
+  }
+  .plants-lover img {
+    border-radius: 10px;
+  }
+
+  .lover-img-responsive{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .plant-lover-title {
+    font-size: 1.7rem;
+  }
+  .plant-lover-list li {
+    padding: 0 0;
+    margin-left: 25px;
+    margin-top: 16px;
+    font-size: 1.01rem;
+  }
+  /* Plants Lover */
+  .trust {
+    display: none;
+  }
+
+  /* Latest  */
+  .latest-deals {
+    margin-bottom: 0;
+}
+  .latest-image-section {
+    grid-template-columns: 1fr;
+    width: 350px;
+    margin: 40px auto;
+  }
+  .zabo-plant {
+    width: 100%;
+    height: 200px;
+    padding-top: 80px;
+  }
+  .zabo-title,
+  .shop {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Join Section */
+  .join-section-title {
+    font-size: 1rem;
+  }
+  .input-field {
+    padding: 0 15px;
+  }
+  .secondary-btn{
+    font-size: 14px;
+  }
+  /* Footer  */
+  .footer-content {
+    max-width: 350px;
+    margin: 0 auto;
+    flex-direction: column;
+    font-size: 18px;
+  }
+  .footer-description {
+    padding: 30px 0;
+    line-height: 20px;
+  }
+  .footer-logo {
+    max-width: 100%;
+  }
 }
