@@ -186,3 +186,102 @@ navbar style */
    background-image: linear-gradient(to right, #e74c3c, #f39c12);
   transform: scale(1.05);
 }
+
+/* Plants Lover Style */
+.plants-lover {
+  display: flex;
+  gap: 90px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.trust {
+  position: absolute;
+  width: 280px;
+  top: -100px;
+  right: 0;
+  left: 230px;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+.trust:hover{
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  0%{
+    
+  }
+  100%{
+    transform: rotate(360deg);
+    
+  }
+}
+
+.plants-lover img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+.plants-lover-text {
+  margin-top: 34px;
+  max-width: 700px;
+}
+.plant-lover-title {
+  font-size: 4rem;
+  font-weight: var(--fw-bold);
+  font-family: var(--font-family-heading);
+}
+.plant-lover-list li {
+  list-style: disc;
+  padding: 0 39px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-weight: var(--fw-normal);
+  color: var(--text-color);
+}
+/* latest image section */
+.latest-deals {
+  margin-bottom: 180px;
+}
+.latest-image-section {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 30% 67%;
+  column-gap: 30px;
+  row-gap: 30px;
+  font-family: var(--font-family-heading);
+  font-weight: var(--fw-bold);
+  color: white;
+  text-align: center;
+}
+.bloom-plant,
+.ana-plant {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 24px;
+  padding-top: 70px;
+}
+.ana-plant {
+  margin-top: 30px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/deal-ana.png);
+}
+.zabo-plant {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 24px;
+  font-size: 40px;
+  padding-top: 150px;
+}
+.Shop-title {
+  text-decoration: underline;
+}
