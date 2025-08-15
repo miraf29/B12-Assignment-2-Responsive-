@@ -35,3 +35,21 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.btn {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 26px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
